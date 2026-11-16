@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rayan El Mostaqbal تقدم حلول العزل الحراري والمائي للأسطح في جميع أنحاء الإمارات. تواصل معنا عبر واتساب لطلب الخدمة.">
+  <meta name="theme-color" content="#14264d">
+  <title>عزل الأسطح في الإمارات | Rayan El Mostaqbal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #14264d;
+      --red: #bd3029;
+      --ink: #1d2940;
+      --muted: #647087;
+      --pale: #f4f6fa;
+      --white: #fff;
+      --green: #20b968;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Cairo", Arial, sans-serif; color: var(--ink); background: var(--white); line-height: 1.8; }
+    a { text-decoration: none; }
+    .container { width: min(1140px, 92%); margin: auto; }
+    header { background: #fff; border-bottom: 1px solid #edf0f5; position: sticky; top: 0; z-index: 20; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:82px; }
+    .brand img { width: 190px; max-height: 70px; object-fit: contain; display:block; }
+    .nav-links { display:flex; gap:24px; align-items:center; font-size:14px; font-weight:700; }
+    .nav-links a { color:var(--navy); }
+    .nav-links a:hover { color:var(--red); }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:0; border-radius:9px; padding:12px 22px; font:700 15px "Cairo",sans-serif; cursor:pointer; transition:.2s; }
+    .btn-red { color:#fff; background:var(--red); box-shadow:0 8px 20px #bd30292b; }
+    .btn-red:hover { background:#a92520; transform:translateY(-2px); }
+    .btn-green { color:#fff; background:var(--green); }
+    .btn-green:hover { background:#159d55; transform:translateY(-2px); }
+    .hero { position:relative; overflow:hidden; color:#fff; background:linear-gradient(100deg,rgba(10,24,52,.92),rgba(20,38,77,.78)), url("https://images.unsplash.com/photo-1635424710928-6f7a5e4b7b5d?auto=format&fit=crop&w=2000&q=85") center/cover; padding:100px 0 92px; }
+    .hero:after { content:""; position:absolute; width:360px; height:360px; border:45px solid #bd302944; border-radius:50%; left:-120px; bottom:-220px; }
+    .hero-content { position:relative; z-index:1; max-width:720px; }
+    .eyebrow { display:inline-block; color:#ffd7d4; background:#bd302933; border:1px solid #ffffff30; border-radius:30px; padding:5px 15px; font-size:13px; font-weight:700; }
+    h1 { font-size:clamp(32px,5vw,54px); line-height:1.35; margin:18px 0 14px; font-weight:800; }
+    .hero p { color:#e5eaf3; font-size:18px; max-width:650px; margin:0 0 28px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .hero-note { margin-top:24px; color:#d5dbea; font-size:13px; }
+    section { padding:78px 0; }
+    .section-head { text-align:center; max-width:720px; margin:0 auto 38px; }
+    .section-head .tag { color:var(--red); font-weight:800; font-size:14px; }
+    h2 { color:var(--navy); font-size:clamp(26px,3vw,38px); line-height:1.4; margin:7px 0 10px; }
+    .section-head p { color:var(--muted); margin:0; }
+    .services { background:var(--pale); }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+    .card { background:#fff; border:1px solid #e9edf4; border-radius:16px; padding:28px; box-shadow:0 10px 30px #14264d0a; }
+    .icon { width:52px; height:52px; border-radius:13px; display:grid; place-items:center; color:var(--red); background:#bd302912; font-size:25px; margin-bottom:14px; }
+    .card h3 { color:var(--navy); margin:0 0 8px; font-size:20px; }
+    .card p { color:var(--muted); margin:0; font-size:15px; }
+    .audience-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .audience { padding:22px; border-radius:13px; background:#fff; border:1px solid #e8ecf2; text-align:center; font-weight:700; color:var(--navy); }
+    .why { background:var(--navy); color:#fff; }
+    .why h2 { color:#fff; }
+    .why .section-head p { color:#d5dbea; }
+    .why-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .why-item { border:1px solid #ffffff2a; background:#ffffff0b; border-radius:14px; padding:22px 18px; text-align:center; }
+    .why-item strong { display:block; color:#fff; margin:8px 0 4px; }
+    .why-item span { color:#d5dbea; font-size:13px; }
+    .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; counter-reset:step; }
+    .step { padding:22px; background:var(--pale); border-radius:14px; }
+    .step:before { counter-increment:step; content:counter(step, decimal-leading-zero); color:var(--red); font-weight:800; font-size:22px; }
+    .step h3 { color:var(--navy); margin:8px 0 4px; font-size:17px; }
+    .step p { color:var(--muted); margin:0; font-size:14px; }
+    .cta { background:linear-gradient(110deg,#14264d,#203d70); color:#fff; text-align:center; }
+    .cta h2 { color:#fff; }
+    .cta p { color:#e0e6f0; margin:0 auto 22px; max-width:650px; }
+    footer { background:#0d1b38; color:#d9e0ed; padding:28px 0; text-align:center; font-size:13px; }
+    .footer-logo { width:160px; background:#fff; border-radius:8px; padding:5px; margin-bottom:10px; }
+    .floating-wa { position:fixed; z-index:30; bottom:20px; left:20px; width:58px; height:58px; display:grid; place-items:center; border-radius:50%; background:var(--green); color:#fff; font-size:27px; box-shadow:0 8px 25px #0003; }
+    @media(max-width:800px) {
+      .nav { min-height:70px; } .brand img { width:145px; } .nav-links { display:none; }
+      .hero { padding:76px 0 70px; background-position:center; }
+      .hero p { font-size:16px; }
+      section { padding:58px 0; }
+      .grid { grid-template-columns:1fr; }
+      .audience-grid { grid-template-columns:1fr; }
+      .why-grid { grid-template-columns:repeat(2,1fr); }
+      .steps { grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:430px) {
+      .hero-actions .btn { width:100%; }
+      .why-grid,.steps { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Rayan El Mostaqbal"><img src="assets/rayan-logo.png" alt="شعار Rayan El Mostaqbal"></a>
+    <nav class="nav-links" aria-label="القائمة الرئيسية">
+      <a href="#services">خدماتنا</a><a href="#why-us">لماذا نحن</a><a href="#steps">خطوات العمل</a><a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="btn btn-red" href="https://wa.me/971565684316?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B9%D8%B2%D9%84%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D8%AD">واتساب الآن</a>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">حلول متكاملة لعزل الأسطح في الإمارات</span>
+        <h1>حماية أقوى لمبناك<br>مع العزل الحراري والمائي</h1>
+        <p>حافظ على مبناك من حرارة الشمس وتسربات المياه مع حلول عزل للأسطح تناسب الفلل والمنازل والمباني التجارية والمنشآت.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="https://wa.me/971565684316?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B9%D8%B2%D9%84%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D8%AD">اطلب الخدمة عبر واتساب</a>
+          <a class="btn btn-green" href="tel:+971565684316">اتصل بنا</a>
+        </div>
+        <div class="hero-note">نخدم العملاء في جميع أنحاء الإمارات العربية المتحدة</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">خدماتنا</span>
+        <h2>حلول عزل تناسب احتياجات مبناك</h2>
+        <p>نوفر خدمات العزل الحراري والمائي لمختلف أنواع الأسطح، مع تحديد الحل المناسب حسب طبيعة الموقع واحتياجه.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="icon">☀</div><h3>العزل الحراري للأسطح</h3><p>حلول تساعد على الحد من انتقال حرارة الشمس إلى داخل المبنى وتحسين الراحة الحرارية.</p></article>
+        <article class="card"><div class="icon">💧</div><h3>العزل المائي للأسطح</h3><p>حماية الأسطح من تسربات المياه والرطوبة باستخدام أنظمة عزل مناسبة لطبيعة السطح.</p></article>
+        <article class="card"><div class="icon">⌂</div><h3>عزل الفلل والمنازل</h3><p>خدمات عزل للأسطح السكنية بمختلف أنواعها، وفق احتياجات كل مبنى.</p></article>
+        <article class="card"><div class="icon">▦</div><h3>عزل المباني والمنشآت</h3><p>حلول للمباني التجارية والمنشآت، مع إمكانية التواصل لتحديد متطلبات المشروع.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">نخدم مختلف القطاعات</span>
+        <h2>حلول عزل للمشاريع السكنية والتجارية</h2>
+        <p>تواصل معنا واشرح لنا طبيعة مشروعك لنساعدك في تحديد الخدمة المناسبة.</p>
+      </div>
+      <div class="audience-grid">
+        <div class="audience">الفلل والمنازل</div>
+        <div class="audience">المباني السكنية</div>
+        <div class="audience">المباني التجارية والمنشآت</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why-us">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">Rayan El Mostaqbal</span>
+        <h2>لماذا تتواصل معنا؟</h2>
+        <p>نهتم بفهم احتياج المشروع وتقديم حل مناسب لطبيعة السطح ونوع العزل المطلوب.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item"><div class="icon">✓</div><strong>حلول متنوعة</strong><span>عزل حراري ومائي</span></div>
+        <div class="why-item"><div class="icon">⌂</div><strong>مختلف أنواع المباني</strong><span>سكنية وتجارية</span></div>
+        <div class="why-item"><div class="icon">◉</div><strong>تواصل مباشر</strong><span>سهولة طلب الخدمة عبر واتساب</span></div>
+        <div class="why-item"><div class="icon">◎</div><strong>تغطية الإمارات</strong><span>التواصل من جميع الإمارات</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps">
+    <div class="container">
+      <div class="section-head">
+        <span class="tag">كيف نبدأ؟</span>
+        <h2>خطوات طلب الخدمة</h2>
+        <p>تواصل معنا عبر واتساب وسنساعدك في الخطوات التالية.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>تواصل معنا</h3><p>أرسل رسالة عبر واتساب وحدد موقع المشروع.</p></div>
+        <div class="step"><h3>شارك التفاصيل</h3><p>أخبرنا بنوع المبنى ومساحة السطح ونوع العزل المطلوب.</p></div>
+        <div class="step"><h3>تحديد الحل</h3><p>نتواصل معك لمناقشة متطلبات المشروع والخطوة المناسبة.</p></div>
+        <div class="step"><h3>بدء التنفيذ</h3><p>يتم تنسيق تفاصيل العمل والموعد مع فريق الشركة.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="container">
+      <span class="eyebrow">Rayan El Mostaqbal Contracting & Maintenance</span>
+      <h2>جاهز تحمي سطح مبناك؟</h2>
+      <p>تواصل معنا الآن للاستفسار عن العزل الحراري والمائي للأسطح في الإمارات.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="btn btn-green" href="https://wa.me/971565684316?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B9%D8%B2%D9%84%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D8%AD">واتساب: 0565684316</a>
+        <a class="btn btn-red" href="https://wa.me/971529929845?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%B7%D9%84%D8%A8%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B9%D8%B2%D9%84%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D8%AD">واتساب البديل: 0529929845</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <img class="footer-logo" src="assets/rayan-logo.png" alt="Rayan El Mostaqbal">
+    <div>Rayan El Mostaqbal Contracting & Maintenance</div>
+    <div>خدمات العزل الحراري والمائي للأسطح في الإمارات</div>
+    <div style="margin-top:8px">© <span id="year"></span> Rayan El Mostaqbal. جميع الحقوق محفوظة.</div>
+  </div>
+</footer>
+<a class="floating-wa" aria-label="تواصل عبر واتساب" href="https://wa.me/971565684316?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B9%D8%B2%D9%84%20%D8%A7%D9%84%D8%A3%D8%B3%D8%B7%D8%AD">✆</a>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
